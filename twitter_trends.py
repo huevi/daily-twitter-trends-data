@@ -4,10 +4,10 @@ import tweepy
 
 data=pd.DataFrame(data=["1,","2","3"])
 
-consumer_key=os.getenv("consumer_key")
-consumer_secret=os.getenv("consumer_secret")
-access_token=os.getenv("access_token")
-access_token_secret=os.getenv("access_token_secret")
+consumer_key=os.getenv("CONSUMER_KEY")
+consumer_secret=os.getenv("CONSUMER_SECRET")
+access_token=os.getenv("ACCESS_TOKEN")
+access_token_secret=os.getenv("ACCESS_TOKEN_SECRET")
 
 print(consumer_key)
 print(type(consumer_key))
@@ -21,7 +21,7 @@ print(type(consumer_key))
 
 # my_fav=api.favorites()
 
-print(my_fav[0])
+# print(my_fav[0])
 
 if not os.path.exists("./data"):
     os.makedirs("./data")
