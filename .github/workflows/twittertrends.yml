@@ -1,7 +1,8 @@
+name: twitter trends
 on:
   schedule:
     - cron:  '0 * * * *' # Every hour. Ref https://crontab.guru/examples.html
-name: twitter trends
+
 jobs:
   build:
     name: Build
@@ -12,5 +13,3 @@ jobs:
       run: |
         pip3 install install pandas
         python3 twitter_trends.py
-    - name: Push changes
-      uses: ad-m/github-push-action@master
