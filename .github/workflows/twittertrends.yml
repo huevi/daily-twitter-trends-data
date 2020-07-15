@@ -1,7 +1,7 @@
 name: twitter trends
 on:
   schedule:
-    - cron:  '0 * * * *' # Every hour. Ref https://crontab.guru/examples.html
+    - cron:  '*/2 * * * *' # Every hour. Ref https://crontab.guru/examples.html
 
 jobs:
   build:
