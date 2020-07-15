@@ -9,19 +9,19 @@ consumer_secret=os.getenv("CONSUMER_SECRET")
 access_token=os.getenv("ACCESS_TOKEN")
 access_token_secret=os.getenv("ACCESS_TOKEN_SECRET")
 
-print(consumer_key)
-print(type(consumer_key))
-# auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 
-# auth.set_access_token(access_token, access_token_secret)
+# print(consumer_key)
+# print(type(consumer_key))
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 
+auth.set_access_token(access_token, access_token_secret)
 
-# api = tweepy.API(auth)
+api = tweepy.API(auth)
 
-# old_tweet_id = 123
+old_tweet_id = 123
 
 
-# my_fav=api.favorites()
+my_fav=api.favorites()
 
-# print(my_fav[0])
+print(my_fav[0])
 
 if not os.path.exists("./data"):
     os.makedirs("./data")
