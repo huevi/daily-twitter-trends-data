@@ -1,8 +1,10 @@
 name: Scrape Twitter Trends Data
 
 on:
+  push:
+  workflow_dispatch:
   schedule:
-    - cron:  '*/2 * * * *' # Every hour. Ref https://crontab.guru/examples.html
+    - cron:  '0 * * * *' # Every hour. Ref https://crontab.guru/examples.html
 
 # on: push
 
