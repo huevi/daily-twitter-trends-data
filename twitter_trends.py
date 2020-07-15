@@ -15,10 +15,14 @@ print(type(consumer_secret))
 print(type(access_token))
 print(type(access_token_secret))
 
-# auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 
-# auth.set_access_token(access_token, access_token_secret)
+print((consumer_key))
+print((consumer_secret))
+print((access_token))
+print((access_token_secret))
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 
+auth.set_access_token(access_token, access_token_secret)
 
-# api = tweepy.API(auth)
+api = tweepy.API(auth)
 
 # old_tweet_id = 123
 
