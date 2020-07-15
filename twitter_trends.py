@@ -9,15 +9,17 @@ consumer_secret=os.getenv("consumer_secret")
 access_token=os.getenv("access_token")
 access_token_secret=os.getenv("access_token_secret")
 
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 
-auth.set_access_token(access_token, access_token_secret)
+print(consumer_key)
+print(type(consumer_key))
+# auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 
+# auth.set_access_token(access_token, access_token_secret)
 
-api = tweepy.API(auth)
+# api = tweepy.API(auth)
 
-old_tweet_id = 123
+# old_tweet_id = 123
 
 
-my_fav=api.favorites()
+# my_fav=api.favorites()
 
 print(my_fav[0])
 
