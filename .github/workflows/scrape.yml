@@ -16,6 +16,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: get twitter data
+      env:
+        ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+        CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
       run: |
         pip3 install install pandas tweepy
         python3 twitter_trends.py
