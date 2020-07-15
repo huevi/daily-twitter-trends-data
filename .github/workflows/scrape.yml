@@ -1,0 +1,15 @@
+name: twitter trends
+on:
+  schedule:
+    - cron:  '*/2 * * * *' # Every hour. Ref https://crontab.guru/examples.html
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: get twitter data
+      run: |
+        pip3 install install pandas
+        python3 twitter_trends.py
