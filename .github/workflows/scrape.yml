@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: get twitter data
       run: |
-        pip3 install install pandas, tweepy
+        pip3 install install pandas tweepy
         python3 twitter_trends.py
     - uses: mikeal/publish-to-github-action@master
       env:
