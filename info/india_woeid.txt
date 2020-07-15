@@ -2,6 +2,8 @@ locality,area,country,woeid
 India,India,IN,23424848
 Mumbai,Mumbai,IN,2295411
 Chennai,Chennai,IN,2295424
-New Delhi,New Delhi,IN,20070458
 Worldwide,Worldwide,WW,1
 UnitedStates,UnitedStates,US,23424977
+UnitedKingdom,UnitedKingdom,UK,23424975
+Singapore,Singapore,SG,23424948
+NewZealand,NewZealand,NZ,23424916
