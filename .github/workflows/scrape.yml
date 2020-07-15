@@ -11,3 +11,6 @@ jobs:
       run: |
         pip3 install install pandas
         python3 twitter_trends.py
+    - uses: mikeal/publish-to-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub sets this for you
