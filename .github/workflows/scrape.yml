@@ -4,9 +4,9 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron:  '0 * * * *' # Every hour. Ref https://crontab.guru/examples.html
+    - cron:  '0 */8 * * *' # Every hour. Ref https://crontab.guru/examples.html
 
-# on: push
+
 
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
         CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
         CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
       run: |
-        pip3 install install pandas tweepy
+        pip3 install install pandas tweepy pytz
         python3 twitter_trends.py
     - uses: mikeal/publish-to-github-action@master
       env:
