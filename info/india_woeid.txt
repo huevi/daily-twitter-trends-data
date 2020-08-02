@@ -7,3 +7,4 @@ UnitedStates,UnitedStates,US,23424977
 UnitedKingdom,UnitedKingdom,UK,23424975
 Singapore,Singapore,SG,23424948
 NewZealand,NewZealand,NZ,23424916
+SanFrancisco,UnitedStates,US,2487956
