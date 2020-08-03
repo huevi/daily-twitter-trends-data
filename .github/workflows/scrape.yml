@@ -22,7 +22,7 @@ jobs:
         CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
         CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
       run: |
-        pip3 install install pandas tweepy pytz
+        pip3 install pandas tweepy pytz
         python3 twitter_trends.py
     - uses: mikeal/publish-to-github-action@master
       env:
