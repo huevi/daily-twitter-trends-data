@@ -1,2 +1,3 @@
 # ignore folder 
 pythonenv3.8/
+data/*
